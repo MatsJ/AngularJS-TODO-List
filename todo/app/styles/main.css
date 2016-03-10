@@ -2,6 +2,42 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+  background: #2E8ECE;
+  color: white;
+  margin-top: -20px;
+}
+
+#addtolist {
+  height: 50px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: none;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.items {
+  height: 40px;
+  font-size: 18px;
+}
+
+#addBtn {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.removeBtn {
+  height: 40px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 24px !important;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -12,10 +48,6 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
