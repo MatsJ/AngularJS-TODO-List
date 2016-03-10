@@ -4,4 +4,6 @@ This repo is a result of a tutorial I am following.
 
 
 Yeoman: http://yeoman.io
+
+
 Tutorial: http://yeoman.io/codelab/index.html
