@@ -13,10 +13,12 @@
 
   <h3>Things to do</h3>
   <div ui-sortable ng-model="todos">
-  <p class="input-group items" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+  <p id="test" class="input-group items" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
     <input type="text" ng-model="todo" class="form-control">
     <span class="input-group-btn">
-      <button class="removeBtn btn btn-default" ng-click="removeTodo($index)" aria-label="Remove"><span class=" removeicon glyphicon glyphicon-remove" ng-click="removeTodo($index)" aria-label="Remove"></span></button>
+      <button class="removeBtn btn btn-success" ng-click="removeTodo($index)" aria-label="Remove">
+        <span class="removeicon glyphicon glyphicon-ok" ng-click="removeTodo($index)" aria-label="Remove"></span>
+      </button>
     </span>
   </p>
 </div>

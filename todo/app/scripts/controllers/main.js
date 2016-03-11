@@ -29,7 +29,7 @@ angular.module('todoApp')
 
   //remove task
   $scope.removeTodo = function (index) {
-    $scope.todos.splice(index, 1);
+        $scope.todos.splice(index, 1);
+        swal('Done!', 'You have finished a task!', 'success');
   };
-
 });
