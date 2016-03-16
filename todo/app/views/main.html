@@ -10,14 +10,14 @@
       </div>
     </div>
   </form>
-
   <h3>Things to do</h3>
   <div ui-sortable ng-model="todos">
-  <p id="test" class="input-group items" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+  <p id="test" class="input-group items" ng-repeat="todo in todos track by $index" style="padding:5px 10px; cursor: move;">
     <input type="text" ng-model="todo" class="form-control">
     <span class="input-group-btn">
-      <button class="removeBtn btn btn-success" ng-click="removeTodo($index)" aria-label="Remove">
+      <button class="removeBtn btn btn-success" aria-label="Remove" ng-click="removeTodo($index)">
         <span class="removeicon glyphicon glyphicon-ok" ng-click="removeTodo($index)" aria-label="Remove"></span>
+        <span>Complete</span>
       </button>
     </span>
   </p>
